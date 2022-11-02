@@ -11,6 +11,10 @@ for (let i = 1; i <= 100; i++) {
         eleGrid.append(eleCell);
         eleCell.style.width = "calc(100% / 10)"
         eleCell.style.width = "calc(100% / 10)"
+
+        eleCell.addEventListener('click', function(){
+            this.classList.toggle('active')
+        })
 }
 
 
